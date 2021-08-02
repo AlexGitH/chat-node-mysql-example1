@@ -1,0 +1,9 @@
+.eslint*
+.jsbeau*
+/tmp/
+Docs/*.pdf
+/node_modules*
+snippet*
+jsconfig.json
+*.swp
+*.code-workspace
