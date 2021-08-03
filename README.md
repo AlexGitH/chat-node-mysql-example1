@@ -7,6 +7,17 @@
 - серверная часть использует EXPRESS для обработки HTTP-запросов;
 - сообщения хранятся в БД MYSQL, которая взаимодействует с сервером через ORM SEQUELIZE.
 
-## RUN
+## NOTES
 
-`npm start`
+env.sh file example
+
+```bash
+export MYSQL_HOST=some-mysql-host
+export MYSQL_USER=my_user_name
+export MYSQL_PASSWORD=secretP@SSword
+export MYSQL_DATABASE=my_awesome_db
+```
+
+## RUN (DEBUG)
+
+`source env.sh && npm start`
