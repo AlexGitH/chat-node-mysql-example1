@@ -12,12 +12,26 @@
 env.sh file example
 
 ```bash
+export PORT=3001
+export MODE=DEVELOPMENT # PRODUCTION
 export MYSQL_HOST=some-mysql-host
 export MYSQL_USER=my_user_name
 export MYSQL_PASSWORD=secretP@SSword
 export MYSQL_DATABASE=my_awesome_db
 ```
 
-## RUN (DEBUG)
+## RUN
 
-`source env.sh && npm start`
+### DEVELOPMENT MODE
+
+```bash
+source env.sh && npm run dev
+```
+
+### PRODUCTION MODE
+
+in production mode express takes static files from `client/build/index.html`
+
+```bash
+npm start
+```
